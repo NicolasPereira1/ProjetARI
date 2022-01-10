@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <title>Author</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+</head>
+
+<header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/">Home</a>
+            <button class="navbar-toggler" type="button">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/authorList">Author</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="/readerList">Reader</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/bookList">Book</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled">Admin</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<body>
+    <div class="container">
+        <br />
+        <h1>Reader</h1>
+        <br />
+        <form action="/addReader" method="POST">
+            <div class="form-group">
+                <label for="firstname">First Name</label>
+                <input type="text" class="form-control" id="firstname" aria-describedby="firstname"
+                    placeholder="Enter first name" name="firstname" required>
+                <br />
+            </div>
+            <div class="form-group">
+                <label for="lastname">Last Name</label>
+                <input type="text" class="form-control" id="lastname" aria-describedby="lastname"
+                    placeholder="Enter last name" name="lastname" required>
+            </div>
+            <br />
+            <button type="submit" class="btn btn-success">Create</button>
+        </form>
+</body>
+
+</html>
